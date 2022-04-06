@@ -3,35 +3,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Create the counter (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className={'App min-h-screen'}>
+      <div className="flex justify-end">
+        <button className="font-bold py-2 px-4 rounded">Light</button>
+        <button className="font-bold py-2 px-4 rounded">Dark</button>
+      </div>
+      <div className="flex flex-col min-h-fit">
+        <div className="flex justify-center items-center">
+        <i class="bi bi-sunrise" style={{fontSize: "4rem"}}></i>
+        </div>
+        <div>
+          <form action="">
+            <input type="text" placeholder="text" />
+            <button className="font-bold py-2 px-4 rounded">Submit</button>
+          </form>
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
   );
 }
