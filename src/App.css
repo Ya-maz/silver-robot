@@ -1,10 +1,42 @@
-.App {
+.app {
   text-align: center;
+  background-color: var(--background-color);
+  transition: background-color 200ms linear;
 }
 
-.App-logo {
+.logo {
   height: 10vmin;
   pointer-events: none;
+  color: var(--icon-color);
+  width: 80px;
+  height: 80px;
+  transition: color 500ms linear;
+}
+.rise {
+  display: var(--icon-rise-display);
+}
+.set {
+  display: var(--icon-set-display);
+}
+.button {
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  border-color: var(--button-border-color);
+  transition: color 500ms linear;
+  transition: background-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+
+.input {
+  color: var(--input-text-color);
+  background-color: var(--input-background-color);
+  border-color: var(--input-border-color);
+  transition: color 500ms linear;
+  transition: background-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+.input::placeholder {
+  color: var(--input-placeholder-text-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,5 +53,3 @@
     transform: rotate(360deg);
   }
 }
-
-

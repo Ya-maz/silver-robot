@@ -9,7 +9,10 @@ html[data-theme="dark"]{
   --input-border-color: #323E47;
 
   --background-color: #092338;
-  --icon-color: #23A690
+  --icon-color:rgb(154 52 18);
+
+  --icon-rise-display: none;
+  --icon-set-display: block;
 }
 
 html[data-theme="light"]{
@@ -17,13 +20,15 @@ html[data-theme="light"]{
   --button-background-color:#343834;
   --button-border-color:#000;
 
-  --input-text-color: #606960;
+  --input-text-color: #000;
   --input-placeholder-text-color: #99A799;
-  --input-background-color: #9AB8AE;
+  --input-background-color: rgb(254 243 199);
   --input-border-color: #323E47;
 
   --background-color: #fff;
-  --icon-color: #32840C;
+  --icon-color: rgb(250 204 21);
+  --icon-rise-display: block;
+  --icon-set-display: none;
 }
 
 
